@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contacts({ contacts, changeContactsForm }) {
+function Contacts({ contacts, changeContactsForm, sign }) {
 
   return (
     <div className='contacts-container'>
@@ -11,7 +11,7 @@ function Contacts({ contacts, changeContactsForm }) {
             <span>{contact.name}</span> <br />{contact.phoneNumber} <br /> {contact.location}
           </li>
         ))}
-         <li className='add-button' onClick={changeContactsForm}>+</li>
+         <li className='add-button' onClick={changeContactsForm}>{ sign }</li>
       </ul>
 
 
